@@ -12,7 +12,7 @@ pipeline {
         stage ('Testing stage') {
             steps {
             withMaven(maven : 'maven-3') {
-                 sh 'mvn clean test'  
+                 sh 'mvn test'  
             }
           }
         }
